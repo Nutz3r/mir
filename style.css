@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 html, body{
     height: 100%;
 }
@@ -71,6 +75,7 @@ nav ul li a{
     font-size: 30px;
     transition: 0.5s;
     text-align: center;
+
 }
 
 
@@ -153,30 +158,14 @@ img.logo{
 }
 
 
+/***** PRÉSENTATION *****/
 
-/* l'arnaque */
 #pres{
     height: 100px;
     background-color: white;
     margin: 0 auto;
 }
 
-#galerie{
-    height: 100px;
-    background-color: white;
-    margin: 0 auto;
-
-}
-
-#contact{
-    height: 100px;
-    background-color: white;
-    margin: 0 auto;
-}
-
-
-
-/***** PRÉSENTATION *****/
 
 .presentation-flex{
     display: flex;
@@ -266,6 +255,11 @@ margin-bottom: 35px;
 
 /***** GALERIE *****/
 
+#galerie{
+    height: 100px;
+    background-color: white;
+    margin: 0 auto;
+}
 
 .galerie{ /* SLIDE */
     min-height: 500px;
@@ -332,6 +326,12 @@ margin-bottom: 35px;
 
 
 /***** CONTACT *****/
+
+#contact{
+    height: 100px;
+    background-color: white;
+    margin: 0 auto;
+}
 
 .contact{ /* SLIDE */
     min-height: 500px;
