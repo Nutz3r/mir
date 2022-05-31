@@ -12,23 +12,22 @@
 
     <link rel="stylesheet" href="style.css">   
     <title>Mir</title>
-    <script src="app.js"></script>
 
 
 
 </head>
 <body>
-
 <!-- MENU -->
  
     <header> 
-        <img id="header-logo" src="images/logo_mir.png" alt="Logo Mir">
-        <nav class="wrapper">
+       <div id="top"></div>
+        <nav>
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Présentation</a></li>
-                <li><a href="#">Galerie</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><img id="header-logo2" src="images/logo_mir.png" alt="Logo Mir"></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#pres">Présentation</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -67,20 +66,20 @@
     </div>
 
 <!-- PRÉSENTATION -->
+    <div id="pres" class="wrapper"></div>
 
-<div class="presentation wrapper">
+    <div  class="presentation wrapper">
+        <div class="presentation-flex">
+            <div class="texte">
+                <h1>Qui suis-je?</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae cum est placeat possimus fugiat asperiores animi rerum, architecto praesentium eligendi, iusto nemo ea a ex quas voluptatem et sed incidunt vel, veniam fuga. Ad reprehenderit veniam laboriosam, ea maxime fugit eius quasi excepturi culpa illo? Eveniet corporis vel harum eius natus dolorum beatae maxime quisquam, dicta dolorem mollitia neque!</p>
+            </div>
 
-    <div class="presentation-flex">
-        <div class="texte">
-            <h1>Qui suis-je?</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae cum est placeat possimus fugiat asperiores animi rerum, architecto praesentium eligendi, iusto nemo ea a ex quas voluptatem et sed incidunt vel, veniam fuga. Ad reprehenderit veniam laboriosam, ea maxime fugit eius quasi excepturi culpa illo? Eveniet corporis vel harum eius natus dolorum beatae maxime quisquam, dicta dolorem mollitia neque!</p>
+            <div class="photos">
+                <div class="cadre avant"></div>
+                <div class="cadre arriere"></div>
+            </div>
         </div>
-
-        <div class="photos">
-            <div class="cadre avant"></div>
-            <div class="cadre arriere"></div>
-        </div>
-    </div>
 
 
         <div class="video ">
@@ -94,6 +93,7 @@
 
 
 <!-- GALERIE -->
+<div id="galerie" class="wrapper"></div>
 
 <div class="galerie wrapper">
 
@@ -131,8 +131,10 @@
 
 </div>
 
+<div id="contact" class="wrapper"></div>
 
 <div class="contact wrapper">
+
     <h1 class="contact-title">Me contacter</h1>
 
     <div class="contact-flex">
@@ -206,6 +208,24 @@
           prevEl: ".swiper-button-prev",
         },
       });
+
+      var scrolling
+      const logo = document.querySelector(".logo")
+      
+      window.addEventListener('scroll',()=>{
+        scrolling = document.documentElement.scrollTop || window.scrollY || window.pageYOffset || document.body.scrollTop
+
+        console.log(scrolling)
+
+        if(scrolling>10)
+        {
+            logo.classList.add('logo-dep')
+        }else if(scrolling<10)
+        {
+            logo.classList.remove('logo-dep')
+        }
+
+      })
     </script>
 
 

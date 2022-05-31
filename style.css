@@ -41,13 +41,25 @@ header{
 
 /***** MENU *****/
 
+nav{
+    width: 100%;
+}
+
 nav ul{
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 nav ul li{
     list-style: none;
+    flex: 1;
+}
+
+#header-logo2{
+    max-width: 100%;
+    height: 80px;
+    opacity: 0;
 }
 
 nav ul li a{
@@ -58,6 +70,7 @@ nav ul li a{
     font-family: 'BookmanOS';
     font-size: 30px;
     transition: 0.5s;
+    text-align: center;
 }
 
 
@@ -120,12 +133,48 @@ nav ul li a:hover{
 img.logo{
     width: 252px;
     height: 186px;
-    position: relative;
+    position: absolute;
     z-index: 2;
-    top: -39%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    z-index: 1001;
+    transform: translate(-50%,-100%);
+    transition: all 1s;
 }
+
+
+.logo-dep{
+    width: 108.56px!important;
+    height: 80px!important;
+    position: fixed!important;
+    top: 0!important;
+    left: 0!important;
+    transform: translate(100%,0%)!important;
+}
+
+
+
+/* l'arnaque */
+#pres{
+    height: 100px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+#galerie{
+    height: 100px;
+    background-color: white;
+    margin: 0 auto;
+
+}
+
+#contact{
+    height: 100px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+
 
 /***** PRÉSENTATION *****/
 
@@ -377,4 +426,21 @@ footer{
     border-top: 1px solid black;
     text-align: center;
     line-height: 80px;
+}
+
+
+
+
+
+#scroll{
+    width: 100px;
+    padding: 15px 0;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1001;
+    text-align: center;
 }
