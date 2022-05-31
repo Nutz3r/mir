@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK DU SLIDER -->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />    <!---->
+
+    <link rel="stylesheet" href="style.css">   
+    <title>Mir</title>
+    <script src="app.js"></script>
+
+
+
+</head>
+<body>
+
+<!-- MENU -->
+ 
+    <header> 
+        <img id="header-logo" src="images/logo_mir.png" alt="Logo Mir">
+        <nav class="wrapper">
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Présentation</a></li>
+                <li><a href="#">Galerie</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- EN-TÊTE -->
+    <div class="en-tete wrapper">
+
+        <div class="slider wrapper">
+              
+            
+            
+            
+            <!-- Swiper -->
+     <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+                <!-- -->
+
+
+        </div>
+        <img src="images/logo_mir.png" alt="Logo Mir" class="logo">
+
+    </div>
+
+<!-- PRÉSENTATION -->
+
+<div class="presentation wrapper">
+
+    <div class="presentation-flex">
+        <div class="texte">
+            <h1>Qui suis-je?</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae cum est placeat possimus fugiat asperiores animi rerum, architecto praesentium eligendi, iusto nemo ea a ex quas voluptatem et sed incidunt vel, veniam fuga. Ad reprehenderit veniam laboriosam, ea maxime fugit eius quasi excepturi culpa illo? Eveniet corporis vel harum eius natus dolorum beatae maxime quisquam, dicta dolorem mollitia neque!</p>
+        </div>
+
+        <div class="photos">
+            <div class="cadre avant"></div>
+            <div class="cadre arriere"></div>
+        </div>
+    </div>
+
+
+        <div class="video ">
+        <h1>La vidéo</h1>
+        <iframe class="lecteur" width="560" height="315" src="https://www.youtube.com/embed/5VEroFjcq1M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+
+</div>
+
+
+<!-- GALERIE -->
+
+<div class="galerie wrapper">
+
+    <div class="selection"></div>
+    <div class="menuGal">
+        <a href="#">Sculpture</a>
+        <a href="#">Peinture</a>
+        <a href="#">Huile</a>
+        <a href="#">Acrilique</a>
+    </div>
+
+    <div class="sculpture">
+        <div class="ligne">
+            <img src="images/sculpture/celeste-cover.jpeg" alt="1">
+            <img src="images/sculpture/celeste-cover.jpeg" alt="2">    
+            <img src="images/sculpture/celeste-cover.jpeg" alt="3">
+            <img src="images/sculpture/celeste-cover.jpeg" alt="4">
+        </div>
+        
+        <div class="ligne">
+            <img src="images/sculpture/celeste-cover.jpeg" alt="1">
+            <img src="images/sculpture/celeste-cover.jpeg" alt="2">    
+            <img src="images/sculpture/celeste-cover.jpeg" alt="3">
+            <img src="images/sculpture/celeste-cover.jpeg" alt="4">
+        </div>
+        <div class="ligne">
+            <img src="images/sculpture/celeste-cover.jpeg" alt="1">
+            <img src="images/sculpture/celeste-cover.jpeg" alt="2">    
+            <img src="images/sculpture/celeste-cover.jpeg" alt="3">
+            <img src="images/sculpture/celeste-cover.jpeg" alt="4">
+        </div>
+
+        </div>
+
+
+</div>
+
+
+<div class="contact wrapper">
+    <h1 class="contact-title">Me contacter</h1>
+
+    <div class="contact-flex">
+        <div class="formulaire left-column">
+    <!--  ******  -->
+            <div class="slide" id="home">
+                <div class="wrapper">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="nom" name="nom" placeholder="Nom">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="mail" name="email" placeholder="E-Mail">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="com" id="com" placeholder="Message"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="Envoyer">
+                        </div>
+                    </form>
+                </div>
+            </div>
+    <!--  ******  -->
+        </div> <!--  fermeture balise div formulaire  -->
+    
+        <div class="right-column">
+            <div class="infos">
+                <p> Miriam Lebrun </p>
+                <p>Boulevard Jean de Wilde</p>
+                <p>4000 Liège, Belgique</p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2529.1931266177903!2d5.565198915628339!3d50.66067468007593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0fa68a9b3a873%3A0xfe90807e006e04df!2sBd%20Jean%20de%20Wilde%2C%204000%20Li%C3%A8ge!5e0!3m2!1sfr!2sbe!4v1653392203231!5m2!1sfr!2sbe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<footer><p>Antoine Lespagnard - Bachelier 1 en infographie - ©EPSE </p></footer>
+
+
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
