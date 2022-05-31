@@ -304,6 +304,8 @@ margin-bottom: 35px;
 
 
     /* IMAGES */
+
+/* sculpture */    
 .sculpture{
     width: 100%;
     display: flex;
@@ -323,6 +325,27 @@ margin-bottom: 35px;
     justify-content: space-evenly;
     width: 85%;
 }
+
+
+/* peinture */
+.peinture{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 1994px;
+    left: -100%;  
+}
+
+
+.peinture img{
+    width: 220px;
+    margin-top: 30px;
+}
+
+
 
 
 /***** CONTACT *****/
@@ -358,7 +381,6 @@ margin-bottom: 35px;
 }
 
     /* Formulaire */
-/* **** */
 .slide{
     width: 100%;
     height: 100%;
@@ -404,7 +426,6 @@ input[type=submit]
     cursor: pointer;
     margin-bottom: 50px;
 }
-/* **** */
 
     /* Infos */
 
@@ -413,10 +434,16 @@ input[type=submit]
 }
 
 .infos p{
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
+.prenom{
+    margin-top: 27px;
+}
 
+.pays{
+    margin-bottom: 15px;
+}
 
 /***** FOOTER *****/
 
@@ -426,21 +453,4 @@ footer{
     border-top: 1px solid black;
     text-align: center;
     line-height: 80px;
-}
-
-
-
-
-
-#scroll{
-    width: 100px;
-    padding: 15px 0;
-    background-color: black;
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1001;
-    text-align: center;
 }
