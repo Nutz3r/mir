@@ -94,7 +94,8 @@
 
 <div class="galerie wrapper">
 
-    <div class="selection"></div>
+    <div id="select" class="selection"></div>
+    <div class="menuGalBorder">
     <div class="menuGal">
         <ul>
             <li id="m1">Sculpture</li>
@@ -103,9 +104,12 @@
             <li id="m4">Acrylique</li>
         </ul>
     </div>
+    </div>
 
     <div class="container">
         <div class="cont-gal">
+
+
             <div id="sculpture" class="galeria">
                 <div class="ligne">
                     <img src="images/sculpture/celeste-cover.jpeg" alt="1">
@@ -129,17 +133,10 @@
 
             </div>
 
-            <div id="peinture" class="">
+            <div id="peinture" class="galeria">
                 <div class="ligne">
                     <img src="images/sculpture/celeste-cover.jpeg" alt="1">
-                    <img src="images/sculpture/celeste-cover.jpeg" alt="2">    
-                    <img src="images/sculpture/celeste-cover.jpeg" alt="3">
-                    <img src="images/sculpture/celeste-cover.jpeg" alt="4">
-                </div>
-                
-                <div class="ligne">
-                    <img src="images/sculpture/celeste-cover.jpeg" alt="1">
-                    <img src="images/sculpture/celeste-cover.jpeg" alt="2">    
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="2">
                     <img src="images/sculpture/celeste-cover.jpeg" alt="3">
                     <img src="images/sculpture/celeste-cover.jpeg" alt="4">
                 </div>
@@ -149,8 +146,63 @@
                     <img src="images/sculpture/celeste-cover.jpeg" alt="3">
                     <img src="images/sculpture/celeste-cover.jpeg" alt="4">
                 </div>
-
+                <div class="ligne">
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="1">
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="2">    
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="3">
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="4">
+                </div>
             </div>
+
+
+
+            <div id="huile" class="galeria">
+                <div class="ligne">
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="1">
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="2">    
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="3">
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="4">
+                </div>
+                <div class="ligne">
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="1">
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="2">    
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="3">
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="4">
+                </div>
+                <div class="ligne">
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="1">
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="2">    
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="3">
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="4">
+                </div>
+    
+            </div>
+
+            <div id="acrylique" class="galeria">
+                <div class="ligne">
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="1">
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="2">    
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="3">
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="4">
+                </div>
+                   
+                <div class="ligne">
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="1">
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="2">    
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="3">
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="4">
+                </div>
+                <div class="ligne">
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="1">
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="2">    
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="3">
+                    <img src="images/sculpture/celeste-cover.jpeg" alt="4">
+                </div>
+    
+            </div>
+
+
+
         </div>
     </div>
 
@@ -188,10 +240,10 @@
         </div> <!--  fermeture balise div formulaire  -->
     
         <div class="right-column">
-            <div class="infos">
+            <div class="infos"><b>PICTO POUR ADRESSE ET TOTU</b>
                 <p class="prenom"> Miriam Lebrun </p>
                 <p>Boulevard Jean de Wilde 42</p>
-                <p class="pays">4000 Liège, Belgique</p>
+                <p>4000 Liège, Belgique</p>
             </div>
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2529.1931266177903!2d5.565198915628339!3d50.66067468007593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0fa68a9b3a873%3A0xfe90807e006e04df!2sBd%20Jean%20de%20Wilde%2C%204000%20Li%C3%A8ge!5e0!3m2!1sfr!2sbe!4v1653392203231!5m2!1sfr!2sbe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -258,6 +310,34 @@
 
 /* Galerie animation */
 
+        const m1 = document.querySelector("#m1")
+        const m2 = document.querySelector("#m2")
+        const m3 = document.querySelector("#m3")
+        const m4 = document.querySelector("#m4")
+        const contGal = document.querySelector('.cont-gal')
+        const select = document.querySelector("#select")
+
+        console.log(select)
+
+        m1.addEventListener('click',()=>{
+            contGal.style.left = '0px'
+            select.style.left="-284px"            
+        })
+
+        m2.addEventListener('click',()=>{
+            contGal.style.left = '-1200px'
+            select.style.left="-81px"
+        })
+
+        m3.addEventListener('click',()=>{
+            contGal.style.left = '-2400px'
+            select.style.left="100px"
+        })
+
+        m4.addEventListener('click',()=>{
+            contGal.style.left = '-3600px'
+            select.style.left="284px"
+        })
 
 
 

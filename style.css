@@ -140,11 +140,11 @@ img.logo{
     height: 186px;
     position: absolute;
     z-index: 2;
-    top: 50%;
+    top: 44%;
     left: 50%;
     z-index: 1001;
     transform: translate(-50%,-100%);
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 
@@ -272,7 +272,7 @@ margin-bottom: 35px;
     flex-wrap: wrap;
 }
     /* MENU */
-.menuGal{ 
+.menuGalBorder{ 
     width: 782px;
     height: 42px;
     margin: 0 auto;
@@ -280,12 +280,17 @@ margin-bottom: 35px;
     line-height: 42px;
     border-top: 1px solid rgba(0,0,0,0.25);
     border-bottom: 1px solid rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
 }
 
 .menuGal ul{
+    position: absolute;
+    z-index: 2;
+    width: 782px;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-
 }
 
 .menuGal li{
@@ -302,11 +307,12 @@ margin-bottom: 35px;
     width: 120px;
     height: 42px;
     position: relative;
-    z-index: 100;
+    z-index: 2;
     border-top: 1px solid #bc541b;
     border-bottom: 1px solid #bc541b;
     cursor: pointer;
     left: -285px;
+    transition: 1s all;
 }
 
 
@@ -314,6 +320,7 @@ margin-bottom: 35px;
 
 .container{
     width: 1200px;
+    height: 750px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -321,24 +328,17 @@ margin-bottom: 35px;
 
 .galeria{
     width: 1200px;
-    height: 400px;
+    height: 750px;
     position: absolute;
 }
 
 
-/* sculpture */    
-#sculpture{
-    width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-evenly;
-}
-
-
-#sculpture img{
-    width: 220px;
-    margin-top: 30px;
+.cont-gal{
+    position: absolute;
+    width: 3600px;
+    top: 0;
+    left: 0px;
+    transition: all 1s;
 }
 
 .ligne{
@@ -348,6 +348,25 @@ margin-bottom: 35px;
 }
 
 
+
+/* sculpture */    
+#sculpture{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    left: 0;
+}
+
+
+#sculpture img{
+    width: 220px;
+    margin-top: 30px;
+}
+
+
+
 /* peinture */
 #peinture{
     width: 1200px;
@@ -355,16 +374,50 @@ margin-bottom: 35px;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-evenly;
-    position: absolute;
-    top: 1994px;
-    left: -100%;  
+    left: 1200px;
 }
 
 
-.peinture img{
+#peinture img{
     width: 220px;
     margin-top: 30px;
 }
+
+
+/* huile */
+#huile{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    left: 2400px;
+
+}
+
+
+#huile img{
+    width: 220px;
+    margin-top: 30px;
+}
+
+
+/* acrylique */
+#acrylique{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    left: 3600px;
+}
+
+
+#acrylique img{
+    width: 220px;
+    margin-top: 30px;
+}
+
 
 
 
@@ -418,12 +471,12 @@ margin-bottom: 35px;
 
 .form-group input, .form-group textarea{
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'BookmanOS';
     padding: 5px 3px;
     background-color: transparent;
     border: none;
     border-bottom: solid 2px #bc541b;
-    color: white;
+    color: black;
 }
 
 .form-group input{
@@ -454,18 +507,13 @@ input[type=submit]
     display: flex;
 }
 
-.infos p{
-    margin-bottom: 5px;
+.infos{
+    margin-bottom: 15px;
 }
 
 .prenom{
     margin-top: 27px;
 }
-
-.pays{
-    margin-bottom: 15px;
-}
-
 /***** FOOTER *****/
 
 footer{
@@ -474,4 +522,12 @@ footer{
     border-top: 1px solid black;
     text-align: center;
     line-height: 80px;
+}
+
+
+
+
+b{
+    color: white;
+    background-color: red;
 }
