@@ -501,6 +501,19 @@ input[type=submit]
 
     /* Infos */
 
+.nom-prenom{
+    position: relative;
+    top: 13px;
+    width: 45px;
+}
+
+.adresse{
+    position: relative;
+    top: 25px;
+    width: 50px;
+}
+
+
 .contact-flex{
     display: flex;
 }
@@ -524,8 +537,3 @@ footer{
 
 
 
-
-b{
-    color: white;
-    background-color: red;
-}
